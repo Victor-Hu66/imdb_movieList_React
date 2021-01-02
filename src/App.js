@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import {useState, useEffect} from "react";
+import Card from "./components/Card/Card";
 import './App.css';
+import axios from "axios";
+
+const baseUrl = 
+
 
 function App() {
+  const [movieList, setMovieList] = useState([]);
+
+  useEffect ( () => {
+    axios.get(
+      baseUrl,{}
+    )
+    .then()
+    .catch()
+    .finally()
+  },[]
+
+  )
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card/>
     </div>
   );
 }
