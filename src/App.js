@@ -3,7 +3,8 @@ import Card from "./components/Card/Card";
 import './App.css';
 import axios from "axios";
 
-const baseUrl = 
+const baseUrl = "https://api.themoviedb.org/3/search/movie";
+const apiKey = "a1aa13ecb541106f47234372288eb64b";
 
 
 function App() {
@@ -11,14 +12,18 @@ function App() {
 
   useEffect ( () => {
     axios.get(
-      baseUrl,{}
+      baseUrl,{params: {
+        api_key: apiKey,
+        page:1,
+        query: "Matrix"
+      }}
     )
-    .then()
+    .then((res) => setMovieList(res?.data?.results))
     .catch()
     .finally()
-  },[]
+  },[])
 
-  )
+  console.log(movieList);
 
   return (
     <div className="App">
