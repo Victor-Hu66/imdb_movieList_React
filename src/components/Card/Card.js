@@ -1,10 +1,15 @@
 import React from "react";
-import { StyledCardContainer } from "./Card.style";
+import { StyledCardContainer, StyledMovieImage, StyledText } from "./Card.style";
 
-const Card = () => {
-  return (
+const Card = ({title, moviePoster}) => {
+  
+  const imgBaseurl = "https://image.tmdb.org/t/p/w500"
+    return (
     <div>
-      <StyledCardContainer>Card</StyledCardContainer>
+      <StyledCardContainer>
+          <StyledMovieImage src={imgBaseurl + moviePoster} alt={"movie Poster"}/>
+            <StyledText>{title}</StyledText>
+      </StyledCardContainer>
     </div>
   );
 };

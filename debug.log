@@ -1,3 +1,4 @@
 [0102/232607.045:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
 [0103/014223.485:ERROR:process_info.cc(359)] UncheckedAllocate
 [0103/014223.497:ERROR:process_info.cc(359)] UncheckedAllocate
+[0103/103943.802:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)

@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import Card from "./components/Card/Card";
+
 import './App.css';
 import axios from "axios";
 import {CardList} from "./components/CardList/CardList"
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <Card/>
+     
       <CardList movieList={movieList}/>
     </div>
   );
