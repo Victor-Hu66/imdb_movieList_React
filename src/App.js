@@ -2,6 +2,7 @@ import {useState, useEffect} from "react";
 import Card from "./components/Card/Card";
 import './App.css';
 import axios from "axios";
+import {CardList} from "./components/CardList/CardList"
 
 const baseUrl = "https://api.themoviedb.org/3/search/movie";
 const apiKey = "a1aa13ecb541106f47234372288eb64b";
@@ -28,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <Card/>
+      <CardList movieList={movieList}/>
     </div>
   );
 }
