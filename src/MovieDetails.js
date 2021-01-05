@@ -25,7 +25,9 @@ export default function MovieDetails () {
 
     return (
         <div>
-            <StyledMovieImage/>
+            <h1>{movieDetails?.original_title}</h1>
+            <StyledMovieImage src={baseImageUrl+movieDetails?.poster_path} alt={"Movie Poster"}/>
+            <p>{movieDetails?.overview}</p> 
         </div>
     )
 }
