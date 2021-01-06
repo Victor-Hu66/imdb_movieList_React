@@ -6,7 +6,7 @@ import { CardList } from "./components/CardList/CardList";
 const baseUrl = "https://api.themoviedb.org/3/search/movie";
 const apiKey = "a1aa13ecb541106f47234372288eb64b";
 
-function App() {
+function Movie() {
   const [movieList, setMovieList] = useState([]);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default Movie;
