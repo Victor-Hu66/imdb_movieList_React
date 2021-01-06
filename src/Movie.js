@@ -15,7 +15,7 @@ function Movie() {
         params: {
           api_key: apiKey,
           page: 1,
-          query: "Matrix",
+          query: "war",
         },
       })
       .then((res) => setMovieList(res?.data?.results))
