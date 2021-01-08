@@ -1,14 +1,14 @@
 import React from 'react';
-
+import {StyledSearchButton, StyledSearchInput, StyledSearchBox} from "./SearchBox.style";
 
 
 const SearchBox = () => {
 
     return (
-        <div>
-            <input></input>
-            <button>Search</button>
-        </div>
+        <StyledSearchBox>
+            <StyledSearchInput></StyledSearchInput>
+            <StyledSearchButton>Search</StyledSearchButton>
+        </StyledSearchBox>
     )
 }
 

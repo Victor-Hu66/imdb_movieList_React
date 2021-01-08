@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
-return (
+  return (
     <div>
-    <Link to="/">HOME</Link>
+      <Link to="/">HOME</Link>
     </div>
-)
-}
+  );
+};
