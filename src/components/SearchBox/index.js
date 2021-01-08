@@ -1,4 +1,5 @@
 import React from 'react';
+import {useRef, useContext} from "react";  
 import {StyledSearchButton, StyledSearchInput, StyledSearchBox} from "./SearchBox.style";
 
 
